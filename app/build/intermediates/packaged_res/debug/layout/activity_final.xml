@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FInalActivity"
+    android:background="@color/my_pryme_color">
+
+    <TextView
+        android:id="@+id/text_View_fin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110sp"
+        android:fontFamily="casual"
+        android:text="Номер \n парковочного места"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_no_fin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:layout_below="@+id/text_View_fin"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_pryme_color"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="casual"
+        android:text="@string/text_car_no"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/field_carNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:hint="@string/hint_car_no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_carNumber"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/text_btn_apply"
+        android:textColor="@color/my_pryme_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:layout_below="@+id/start_btn"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+
+        android:textStyle="bold" />
+</RelativeLayout>

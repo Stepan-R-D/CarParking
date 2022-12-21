@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayActivity"
+    android:background="@color/my_pryme_color"
+    >
+
+    <TextView
+        android:id="@+id/text_number_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="casual"
+        android:text="Номер карты"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="50sp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_number_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_number_pay"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="50sp"
+        android:hint="0123 4567 8901 2345"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/field_mo_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:fontFamily="casual"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="50sp"
+        android:text="Месяц / дата"
+        android:layout_below="@+id/edit_number_pay"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/text_mo_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_mo_year"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="50sp"
+        android:hint="10 / 20"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/field_cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="CVV"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="50sp"
+        android:layout_below="@+id/text_mo_year"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/text_cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_cvv"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="50sp"
+        android:hint="123"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_cvv"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/text_btn_apply"
+        android:textColor="@color/my_pryme_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

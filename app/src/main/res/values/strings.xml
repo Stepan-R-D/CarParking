@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyParking</string>
+    <string name="text_car_no">Введите номер машины</string>
+    <string name="hint_car_no">Номер машины</string>
+    <string name="text_btn_apply">Подтвердить</string>
+    <string name="err_incorrect_no">Номер введен некорректно</string>
+    <string name="text_tax">Выберите нужный тариф</string>
+    <string name="txt_1_hr">1 час - 150 руб</string>
+    <string name="txt_2_hr">2 часа - 270 руб</string>
+    <string name="txt_3_hr">3 часа - 400 руб</string>
+    <string name="txt_6_hr">6 часов - 750 руб</string>
+    <string name="txt_12_hr">12 часов - 1400 руб</string>
+
+</resources>
