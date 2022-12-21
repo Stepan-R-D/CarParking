@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         start_btn = findViewById(R.id.start_btn);
         text_Info = findViewById(R.id.text_Info);
 
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
         start_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
                     HttpsRequests requests = new HttpsRequests();
 
-                    Map<String, String> rightHereMap = new HashMap<String, String>()
+                    HashMap<String, String> rightHereMap = new HashMap<String, String>()
                     {
                         {
                             put("number", car_no.toString());
@@ -53,7 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
                    //requests.sendAsyncRequest("/add_car",rightHereMap,HttpMethods.POST);
 
-                    text_Info.setText(requests.sendAsyncRequest("/add_car",rightHereMap,HttpMethods.POST));
+                    try {
+                        text_Info.setText(requests.sendAsyncRequest("/add_car",rightHereMap,HttpMethods.POST));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
 
 
                     //Intent intent_choose = new Intent(MainActivity.this, ChooseActivity.class);
